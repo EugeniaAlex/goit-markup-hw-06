@@ -542,11 +542,13 @@ a.active::after {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.webstudio-social {
+.webstudio-social,
+.subscribe {
   padding-top: 72px;
 }
 
-.webstudio-social-title {
+.webstudio-social-title,
+.footer-form-title {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -579,6 +581,50 @@ a.active::after {
 .webstudio-social-link:hover,
 .webstudio-social-link:focus {
   background-color: var(--accent-color);
+}
+
+.subscribe {
+  margin-left: auto;
+}
+
+.footer-form-title {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.subscribe-field {
+  display: flex;
+  align-items: center;
+}
+
+.footer-form-input {
+  margin-right: 12px;
+  padding-left: 16px;
+  width: 358px;
+  height: 50px;
+  color: #ffffff;
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  outline: none;
+}
+
+.footer-form-input::placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-form-btn {
+  margin-top: 0px;
+  display: flex;
+  align-items: center;
+}
+
+.footer-form-icon {
+  margin-left: 10px;
 }
 
 /*-------------backdrop---and---modal-window---------*/
@@ -727,11 +773,14 @@ a.active::after {
   border-radius: 2px;
 }
 
-.checkbox-text {
+.checkbox-text-decor {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+}
+
+.checkbox-text {
   color: #757575;
 }
 

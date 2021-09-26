@@ -324,61 +324,79 @@
     </main>
 
     <footer class="footer">
-        <h2 style="display:none">Контакты<span lang="en">Webstudio</span></h2>
+        <h2 style="display: none">Контакты<span lang="en">Webstudio</span></h2>
         <div class="container footer-flexcont">
-        <div class="address">   
-            <a class="link logo logo-footer" href="" lang="en"><span class="web">Web</span>Studio</a>
-            <address class="footer-contacts">
-                <ul class="list list-footer">
-                    <li class="list-footer-item"><a class="link footer-address-link"
-                            href="https://goo.gl/maps/6n3pDnKZSii65f8L8" target="_blank" rel="noreferrer noopener">
-                            г. Киев, пр-т Леси Украинки, 26</a>
+            <div class="address">   
+                <a class="link logo logo-footer" href="" lang="en"><span class="web">Web</span>Studio</a>
+                <address class="footer-contacts">
+                    <ul class="list list-footer">
+                        <li class="list-footer-item"><a class="link footer-address-link"
+                                href="https://goo.gl/maps/6n3pDnKZSii65f8L8" target="_blank" rel="noreferrer noopener">
+                                г. Киев, пр-т Леси Украинки, 26</a>
+                        </li>
+                        <li class="list-footer-item"><a class="link footer-contacts-link"
+                                href="mailto:info@example.com">info@example.com</a>
+                        </li>
+                        <li class="list-footer-item"><a class="link footer-contacts-link" 
+                                href="tel:+380991111111">+38 099 111 1111</a>
+                        </li>
+                    </ul>
+                </address>
+            </div>
+
+            <div class="webstudio-social">
+                <h3 class="webstudio-social-title">Присоединяйтесь</h3>
+                <ul class="webstudio-social-list list">
+                    <li class="webstudio-social-item">
+                        <a class="webstudio-social-link link transitions" href="">
+                            <svg class="webstudio-social-icon" width="20" height="20">
+                                <use href="./images/sprite.svg#icon-instagram-2-1"></use>
+                            </svg>
+                        </a>
                     </li>
-                    <li class="list-footer-item"><a class="link footer-contacts-link"
-                            href="mailto:info@example.com">info@example.com</a>
+                    <li class="webstudio-social-item">
+                        <a class="webstudio-social-link link transitions" href="">
+                            <svg class="webstudio-social-icon" width="20" height="20">
+                                <use href="./images/sprite.svg#icon-twitter-1-1"></use>
+                            </svg>
+                        </a>
                     </li>
-                    <li class="list-footer-item"><a class="link footer-contacts-link" 
-                            href="tel:+380991111111">+38 099 111 1111</a>
+                    <li class="webstudio-social-item">
+                        <a class="webstudio-social-link link transitions" href="">
+                            <svg class="webstudio-social-icon" width="20" height="20">
+                                <use href="./images/sprite.svg#icon-facebook-1-1"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="webstudio-social-item">
+                        <a class="webstudio-social-link link transitions" href="">
+                            <svg class="webstudio-social-icon" width="20" height="20">
+                                <use href="./images/sprite.svg#icon-linkedin-1-1"></use>
+                            </svg>
+                        </a>
                     </li>
                 </ul>
-            </address>
-        </div>
+            </div>
 
-        <div class="webstudio-social">
-            <h3 class="webstudio-social-title">Присоединяйтесь</h3>
-            <ul class="webstudio-social-list list">
-                <li class="webstudio-social-item">
-                    <a class="webstudio-social-link link transitions" href="">
-                        <svg class="webstudio-social-icon" width="20" height="20">
-                            <use href="./images/sprite.svg#icon-instagram-2-1"></use>
-                        </svg>
-                    </a>
-                </li>
-                <li class="webstudio-social-item">
-                    <a class="webstudio-social-link link transitions" href="">
-                        <svg class="webstudio-social-icon" width="20" height="20">
-                            <use href="./images/sprite.svg#icon-twitter-1-1"></use>
-                        </svg>
-                    </a>
-                </li>
-                <li class="webstudio-social-item">
-                    <a class="webstudio-social-link link transitions" href="">
-                        <svg class="webstudio-social-icon" width="20" height="20">
-                            <use href="./images/sprite.svg#icon-facebook-1-1"></use>
-                        </svg>
-                    </a>
-                </li>
-                <li class="webstudio-social-item">
-                    <a class="webstudio-social-link link transitions" href="">
-                        <svg class="webstudio-social-icon" width="20" height="20">
-                            <use href="./images/sprite.svg#icon-linkedin-1-1"></use>
-                        </svg>
-                    </a>
-                </li>
-            </ul>
-        </div>
+            <div class="subscribe">
+                <form class="footer-form" action="#">
+                    <b class="footer-form-title">Подпишитесь на рассылку</b>
+                    <div class="subscribe-field">
+                        <input class="footer-form-input" type="email" name="subscribe-email" placeholder="E-mail"> 
+                        <button class="footer-form-btn order-service transitions" type="submit"><span>Подписаться</span>
+                            <svg class="footer-form-icon" width="24" height="24">
+                                <use href="./images/sprite.svg#icon-icon-send-1"></use>
+                            </svg>
+                        </button>
+                    </div>
+                    
+                </form>
+
+            </div>
+
         </div>
     </footer>
+
     <div class="backdrop is-hidden" data-modal>
         <div class="modal-window">
             <button class="modal-close-button" type="button" data-modal-close>
@@ -431,8 +449,8 @@
                         <svg class="modal-checkbox-icon transitions" width="12" height="8">
                             <use href="./images/sprite.svg#icon-check-1"></use>
                         </svg>
-                        <span class="checkbox-text">Соглашаюсь с рассылкой и принимаю 
-                            <a href="" class="policy-link">Условия договора</a>
+                        <span class="checkbox-text checkbox-text-decor">Соглашаюсь с рассылкой и принимаю 
+                            <a href="" class="policy-link checkbox-text-decor">Условия договора</a>
                         </span>
                     </div>     
                 </label>
